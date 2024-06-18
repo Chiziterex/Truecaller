@@ -1,38 +1,411 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --txt-color: #fff;
+  --txt-color-blk: #000;
+  --txt-color-gry: #2d2d2d;
+  --hero-section-color: rgb(45, 45, 45, 0.1);
+  --button-color: rgb(0, 135, 255);
+  --star-color: orange;
+  --features-bg-color: rgba(59, 130, 246, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behaviour: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: url(https://www.truecaller.com/cms/93591a2714917a73fed51ff5cd043950.avif)
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 97vh;
+  /* font-size: 1rem; */
+  line-height: 1.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.backdrop-color {
+  background: var(--hero-section-color);
+  /* padding: 200px 700px; */
+  width: 100vw;
+  height: 97vh;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 2%;
+  background: transparent;
+}
+
+header div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-color);
+  gap: 1.75rem;
+}
+
+header div:nth-child(1) p {
+  font-size: 1.85rem;
+}
+
+header div:nth-child(1) ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-color);
+  list-style: none;
+  gap: 1.4rem;
+}
+
+header div:nth-child(1) ul li a {
+  color: var(--txt-color);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+header div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-color);
+  gap: 1.2rem;
+}
+
+header div:nth-child(2) select {
+  background: transparent;
+  border: none;
+  width: 70px;
+  color: var(--txt-color);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+header div:nth-child(2) select option {
+  color: var(--txt-color-blk);
+}
+
+header div:nth-child(2) span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-color);
+  font-weight: 700;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+header div:nth-child(2) button {
+  background-color: var(--button-color);
+  border: none;
+  padding: 20px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* header div:nth-child(2) button:hover {
+  
+} */
+
+header div:nth-child(2) button a {
+  color: var(--txt-color);
+}
+
+/* main */
+
+main {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+  max-width: 600px;
+  margin: 2rem 0 0 4rem;
+  gap: 2.5rem;
+}
+
+main h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 3.75rem;
+  color: var(--txt-color);
+}
+
+main #scnd-base {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+}
+
+main #scnd-base #dwnload-tc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--txt-color);
+  background-color: var(--button-color);
+  border: none;
+  padding: 16px 43px;
+  border-radius: 9999px;
+  font-size: 0.825rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main #scnd-base #dwnload-tc .fa-download {
+  font-size: 1rem;
+}
+
+main #scnd-base .btnLike-content-parent-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main #scnd-base .btnLike-content-parent-div .btnLike-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--txt-color);
+  padding: 8px 20px;
+  gap: 0.2rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+main #scnd-base .btnLike-content-parent-div .btnLike-content div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.2rem;
+}
+
+main #scnd-base .btnLike-content-parent-div .btnLike-content div p {
+  color: var(--txt-color-gry);
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+
+main #scnd-base .btnLike-content-parent-div .btnLike-content div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+}
+
+main #scnd-base .btnLike-content-parent-div .btnLike-content div span p {
+  font-size: 0.625;
+  font-weight: 500;
+}
+
+main #scnd-base .btnLike-content-parent-div .btnLike-content div span .fa-star {
+  font-size: 0.5rem;
+  /* font-weight: 500; */
+  color: var(--star-color);
+}
+
+main #input {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: var(--txt-color);
+  border: none;
+  border-radius: 9999px;
+  max-width: 550px;
+  height: 90px;
+}
+
+main #input select {
+  border: none;
+  background: transparent;
+  width: 80px;
+  margin-left: 1.5rem;
+  color: var(--button-color);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main #input input {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  width: 365px;
+  font-size: 1rem;
+  outline: none;
+}
+
+main #input input ::placeholder {
+  color: var(--txt-color-gry);
+}
+
+main #input #search-bar {
+  cursor: not-allowed;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 50%;
+  color: var(--txt-color);
+  padding: 23px;
+}
+
+main #input #search-bar .fa-magnifying-glass {
+  font-size: 1.5rem;
+}
+
+/* hero-section-bottom */
+.hero-section-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  overflow-x: auto;
+  background-color: var(--txt-color);
+  padding: 3rem;
+}
+
+.hero-section-bottom .pic-one {
+  width: 257px;
+  height: 40px;
+}
+
+.hero-section-bottom .pic-two {
+  width: 221px;
+  height: 40px;
+}
+
+.hero-section-bottom .pic-three {
+  width: 55px;
+  height: 40px;
+}
+
+.hero-section-bottom .pic-four {
+  width: 52.25px;
+  height: 40px;
+}
+
+.hero-section-bottom .pic-five {
+  width: 264px;
+  height: 40px;
+}
+
+/* about */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 3rem;
+  flex-direction: column;
+  gap: 2.75rem;
+  background-color: var(--hero-section-color);
+}
+
+.about h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.125;
+}
+
+.about .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.about .box-container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.about .box-container .box img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.about .box-container .box p,
+.about .box-container .box span {
+  font-size: 1rem;
+}
+
+.about .box-container .box span {
+  font-weight: 700;
+}
+
+/* features */
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background-color: var(--features-bg-color);
+  padding: 64px 0;
+}
+
+.features .text-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 601px;
+}
+
+.features .text-box #head-text{
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--button-color);
+}
+
+.features .text-box h3{
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.67px;
+  color: var(--txt-color-gry);
+}
+
+/* .features .image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.features .image-box img {
+  width: 270px;
+  height: 575.92px;
+  object-fit: cover;
+  vertical-align: middle;
 }
