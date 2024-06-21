@@ -9,6 +9,7 @@
   --star-color: orange;
   --features-bg-color: #DAE8F3;
   --what-we-do-bg-color:#f3f5f8;
+  --iphone-bg-color:#f2f2f2;
 }
 
 * {
@@ -179,8 +180,10 @@ main #scnd-base #dwnload-tc {
   cursor: pointer;
 }
 
-main #scnd-base #dwnload-tc .fa-download {
-  font-size: 1rem;
+main #scnd-base #dwnload-tc img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 main #scnd-base .btnLike-content-parent-div {
@@ -458,3 +461,122 @@ main #input #search-bar .fa-magnifying-glass {
   font-size: 0.875rem;
   line-height: 1.5rem;
 }
+
+/* trending */
+.trending{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: row-reverse; */
+  background-color: var(--txt-color);
+  min-height: 40vh;
+  max-height: 560px;
+}
+
+.trending img{
+  width: 660px;
+  height: auto;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  display: block;
+}
+
+.trending .text-box{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 3rem;
+}
+
+.trending .text-box #head-text{
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 0.825rem;
+  text-transform: uppercase;
+  color: var(--button-color);
+}
+
+.trending .text-box h3{
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.67px;
+  color: var(--txt-color-gry);
+}
+
+.trending .text-box #dot{
+  color: var(--button-color);
+}
+
+.trending .text-box #details-text{
+  color: var(--txt-color-gry);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.trending .text-box .btn{
+  color: var(--button-color);
+  background-color: var(--txt-color);
+  border:2px solid var(--button-color);
+  font-size: .75rem;
+  border-radius: 9999px;
+  padding: 1.25rem 2rem;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* iphone */
+
+.iphone{
+  background-color: var(--iphone-bg-color);
+}
+
+/* impact */
+
+.impact img{
+  height: 549px;
+}
+
+/* articles */
+.articles{
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--features-bg-color);
+}
+
+.articles .content{
+  max-width: 57rem;
+  
+}
+
+.articles h3{
+  text-align: left;
+  font-size: 2.5rem;
+  color: var(--txt-color-gry);
+}
+
+.articles .box-container{
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ gap: 1.25rem;
+}
+
+.articles .box-container .box{
+  display: block;
+  background-color: var(--txt-color);
+  border-radius: 2rem;
+}
+
+/* .articles .box-container .box h4{
+  padding: 2rem;
+  color: var(--txt-color-gry);
+} */
