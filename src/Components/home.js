@@ -15,7 +15,7 @@ const Home = () => {
             </h1>
             <div id="scnd-base">
               <div id="dwnload-tc">
-                <i class="fa-solid fa-download"></i>
+                <img src="https://www.truecaller.com/cms/0a2587cdca1b28311c5d067ff7bb701c.avif" alt=""></img>
                 <p>Download Truecaller</p>
               </div>
 

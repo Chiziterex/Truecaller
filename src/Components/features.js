@@ -6,7 +6,7 @@ const Features = () => {
       <div className="features">
         <div className="text-box">
           <p id="head-text">Features</p>
-          <h3>Trust your communicatio­n with Truecaller</h3>
+          <h3>Trust your communicatio­n with Truecaller<span id="dot">.</span></h3>
           <p id="details-text">
             Truecaller is proud to be a leader in caller ID and spam blocking
             software as well as research around call and SMS harassment.
@@ -14,7 +14,7 @@ const Features = () => {
           <div className="box-container">
             <div className="box">
               <img src="https://www.truecaller.com/cms/9f8acff5-ada3-43e4-9dbe-46c7d1c4f3e7_feature-icon-caller-id.svg" alt=""></img>
-              <span className="text top">
+              <span className="text">
                 <div>
                   <p id="top">Caller ID</p>
                   <p> Identify incoming calls from unknown numbers</p>
@@ -25,7 +25,7 @@ const Features = () => {
             <div className="box">
               <img src="https://www.truecaller.com/cms/2bde4dd3-59b0-49dd-9d4f-e7298163aabe_feature-icon-spam.svg" alt=""></img>
               <span className="text">
-                <p id="top"> Spam Blocking</p>
+                <p id="top">Spam Blocking</p>
                 <p>Block numbers</p>
               </span>
             </div>
@@ -39,11 +39,12 @@ const Features = () => {
             <div className="box">
               <img src="https://www.truecaller.com/cms/4795ec4a-5234-4da7-a75a-837a65c725f8_feature-icon-chat.svg" alt=""></img>
               <span className="text">
-                <p id="top"> Spam Blocking</p>
+                <p id="top">Messaging</p>
                 <p>No need to switch to other apps</p>
               </span>
             </div>
           </div>
+          <span className="lastParagraph"><p>See all features</p><i>d</i></span>
         </div>
         <div className="image-box">
           <img
@@ -51,6 +52,7 @@ const Features = () => {
             alt=""
           ></img>
         </div>
+       
       </div>
     </>
   );

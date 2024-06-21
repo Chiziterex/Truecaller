@@ -4,10 +4,11 @@
   --txt-color: #fff;
   --txt-color-blk: #000;
   --txt-color-gry: #2d2d2d;
-  --hero-section-color: rgb(45, 45, 45, 0.1);
+  --hero-section-color: rgb(45, 45, 45, 0.3);
   --button-color: rgb(0, 135, 255);
   --star-color: orange;
-  --features-bg-color: rgba(59, 130, 246, 0.3);
+  --features-bg-color: #DAE8F3;
+  --what-we-do-bg-color:#f3f5f8;
 }
 
 * {
@@ -33,7 +34,7 @@ html {
     no-repeat;
   background-position: center;
   background-size: cover;
-  height: 97vh;
+  height: 94vh;
   /* font-size: 1rem; */
   line-height: 1.75rem;
 }
@@ -42,7 +43,7 @@ html {
   background: var(--hero-section-color);
   /* padding: 200px 700px; */
   width: 100vw;
-  height: 97vh;
+  height: 94vh;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -144,7 +145,7 @@ main {
   flex-direction: column;
   min-height: 90vh;
   max-width: 600px;
-  margin: 2rem 0 0 4rem;
+  margin: 3rem 0 0 4rem;
   gap: 2.5rem;
 }
 
@@ -321,10 +322,10 @@ main #input #search-bar .fa-magnifying-glass {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 3rem;
+  padding: 4rem 2.5rem;
   flex-direction: column;
   gap: 2.75rem;
-  background-color: var(--hero-section-color);
+  background-color: var(--what-we-do-bg-color);
 }
 
 .about h3 {
@@ -346,21 +347,26 @@ main #input #search-bar .fa-magnifying-glass {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .about .box-container .box img {
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 190px;
+  width: 190px;
+  color: var(--txt-color-gry);
 }
 
-.about .box-container .box p,
-.about .box-container .box span {
-  font-size: 1rem;
+.about .box-container .box p {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+  color: var(--txt-color-gry);
 }
 
 .about .box-container .box span {
   font-weight: 700;
+  font-size: 1rem;
 }
 
 /* features */
@@ -368,7 +374,7 @@ main #input #search-bar .fa-magnifying-glass {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   background-color: var(--features-bg-color);
   padding: 64px 0;
 }
@@ -379,7 +385,7 @@ main #input #search-bar .fa-magnifying-glass {
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 601px;
+  max-width: 690px;
 }
 
 .features .text-box #head-text{
@@ -397,15 +403,58 @@ main #input #search-bar .fa-magnifying-glass {
   color: var(--txt-color-gry);
 }
 
-/* .features .image-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.features .text-box #dot{
+  color: var(--button-color);
+}
+
+.features .text-box #details-text{
+  color: var(--txt-color-gry);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
 
 .features .image-box img {
   width: 270px;
   height: 575.92px;
   object-fit: cover;
   vertical-align: middle;
+}
+
+.features .text-box .box-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0 1.5rem;
+}
+
+.features .text-box .box-container .box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  padding: 1rem;
+  width: 420px;
+}
+
+.features .text-box .box-container .box .text #top{
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--txt-color-gry);
+}
+
+.features .text-box .box-container .box .text p{
+  font-size: 0.75rem;
+  color: var(--txt-color-gry);
+}
+
+.features .text-box .lastParagraph{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--button-color);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
