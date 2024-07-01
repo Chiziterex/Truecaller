@@ -4,6 +4,7 @@ import About from "./Components/about";
 import Features from "./Components/features";
 import Trending from "./Components/Trending";
 import LatestArticles from "./Components/articles";
+import Download from "./Components/download";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <Trending />
       <LatestArticles />
+      <Download />
     </>
   );
 }

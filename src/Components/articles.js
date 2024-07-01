@@ -8,10 +8,13 @@ const LatestArticles = () => {
           <h3>See our latest articles</h3>
           <div className="box-container">
             <div className="box">
-              <p></p>
+              <span className="top-text">
+                <i className="dot red"></i>
+                <p>Scam Alert</p>
+              </span>
               <img
                 src="https://images.prismic.io/tc-main/ZmFnsJm069VX1gEU_ScammersandTech-blog.jpg?w=800"
-                alt=""
+                alt="" className="img1"
               ></img>
               <div className="text-box">
                 <h4>
@@ -26,10 +29,13 @@ const LatestArticles = () => {
             </div>
 
             <div className="box">
-              <p></p>
+              <span className="top-text">
+                <i className="dot green"></i>
+                <p>Features</p>
+              </span>
               <img
                 src="https://images.prismic.io/tc-main/ZlmouKWtHYXtT9tg_BankScam-blog.jpg?w=800"
-                alt=""
+                alt="" className="img2"
               ></img>
               <div className="text-box">
                 <h4>Are You Smarter Than A Phone Scammer? </h4>
@@ -43,10 +49,13 @@ const LatestArticles = () => {
             </div>
 
             <div className="box">
-              <p></p>
+              <span className="top-text">
+                <i className="dot green"></i>
+                <p>Features</p>
+              </span>
               <img
                 src="https://images.prismic.io/tc-main/ZlcV9KWtHYXtT5Jk_AI-Call-Scanner_KV-blog.png?w=800"
-                alt=""
+                alt="" className="img3"
               ></img>
               <div className="text-box">
                 <h4>
