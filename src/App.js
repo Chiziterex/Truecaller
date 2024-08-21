@@ -6,7 +6,7 @@ import Trending from "./Components/Trending";
 import LatestArticles from "./Components/articles";
 import Download from "./Components/download";
 import Footer from "./Components/footer";
-import lastFooter from "./Components/lastFooter";
+import LastFooter from "./Components/lastFooter";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <LatestArticles />
       <Download />
       <Footer />
-      <lastFooter />
+      <LastFooter />
     </>
   );
 }

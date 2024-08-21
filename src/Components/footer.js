@@ -54,14 +54,14 @@ const Footer = () => {
           </div>
           <div className="aaa">
             <div className="text-box yyy">
-              <h3>All Truecaller Features</h3>
+              <h3>All Truecaller features</h3>
               <div className="xxx">
                 <div className="innerTextBox">
                   <p>
-                    <a>Android app</a>
+                    <a href="https://www.truecaller.com/truecaller-for-android?utm_source=WebMain&utm_medium=Footer">Android app</a>
                   </p>
                   <p>
-                    <a>iOS app</a>
+                    <a href="https://www.truecaller.com/truecaller-for-ios?utm_source=WebMain&utm_medium=Footer">iOS app</a>
                   </p>
                   <p>
                     <a>Premium</a>

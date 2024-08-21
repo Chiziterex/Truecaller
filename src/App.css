@@ -14,6 +14,7 @@
   --green-dot-color: #33b73e;
   --red-dot-color: #ff4130;
   --shadow: rgba(0, 0, 0, 0.04);
+  --lastFooter-bg: rgba(3, 59, 163);
 }
 
 * {
@@ -798,25 +799,25 @@ main #input #search-bar .fa-magnifying-glass {
 
 /* footer */
 
-footer{
-  background-color: rgba(11, 73, 180)
+footer {
+  background-color: rgba(11, 73, 180);
 }
 
 footer .content {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap:1.25rem;
+  gap: 1.25rem;
   padding: 5rem 0;
   margin-left: auto;
   margin-right: auto;
   max-width: 1280px;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.5rem;
 }
 
-footer .content .buttonContainer{
+footer .content .buttonContainer {
   display: flex;
   /* align-items: center; */
   /* justify-content: center; */
@@ -825,16 +826,16 @@ footer .content .buttonContainer{
   gap: 1rem;
 }
 
-footer .content .buttonContainer .lstButton{
+footer .content .buttonContainer .lstButton {
   background-color: var(--txt-color);
   border-radius: 4px;
-  padding:0.75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   cursor: pointer;
   text-align: left;
   color: var(--txt-color-gry);
 }
 
-footer .content .buttonContainer .lstButton span p{
+footer .content .buttonContainer .lstButton span p {
   font-weight: 800;
 }
 
@@ -877,13 +878,20 @@ footer .content .buttonContainer .btnLike-content .btnLike-content div span p {
   font-weight: 500;
 }
 
-footer .content .buttonContainer .btnLike-content .btnLike-content div span .fa-star {
+footer
+  .content
+  .buttonContainer
+  .btnLike-content
+  .btnLike-content
+  div
+  span
+  .fa-star {
   font-size: 0.5rem;
   /* font-weight: 500; */
   color: var(--star-color);
 }
 
-footer .content .aaa{
+footer .content .aaa {
   display: grid;
   grid-column: span 4 / span 4;
   display: flex;
@@ -901,7 +909,7 @@ footer .content .text-box .xxx {
   color: var(--txt-color);
 }
 
-footer .content .text-box .xxx .innerTextBox{
+footer .content .text-box .xxx .innerTextBox {
   display: block;
 }
 
@@ -909,32 +917,69 @@ footer .content .text-box {
   color: var(--txt-color);
 }
 
-footer .content .text-box h3{
-  font-weight: 800;
-  font-size: 1.25rem;
+footer .content .text-box h3 {
+  font-weight: 400;
+  cursor: default;
+  margin-bottom: 2rem;
   word-spacing: 0.1rem;
+  font-size: 1.5rem;
+  line-height: 1.125;
+  letter-spacing: -0.1px;
 }
 
-footer .content .text-box p{
+footer .content .text-box p {
   margin-top: 1rem;
   font-size: 0.85rem;
   cursor: pointer;
 }
 
-footer .content .text-box span{
+footer .content .text-box p a{
+  color: var(--txt-color);
+}
+
+footer .content .text-box span {
   background-color: var(--txt-color);
-  font-size: .65rem;
+  font-size: 0.65rem;
   color: var(--button-color);
-  padding: .2rem;
+  padding: 0.2rem;
   cursor: pointer;
   border-radius: 3px;
 }
 
 /* last footer */
-.lastFooter{
+.lastFooter {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--lastFooter-bg);
+  color: var(--txt-color);
+  font-size: .75rem;
+  padding: 0.5rem 0;
+  line-height: 1.125;
+}
+
+.lastFooter div #tc{
+  font-weight: 700;
+}
+
+.lastFooter div p span::before{
+  content: "|";
+  font-size: 1rem;
+  font-weight: 200;
   color: var(--txt-color);
 }
 
+.lastFooter .images{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
 
+.lastFooter .images img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}

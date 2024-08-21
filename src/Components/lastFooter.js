@@ -1,11 +1,16 @@
 import React from "react";
+import Facebook from "../Assets/facebook.png";
+import Utube from "../Assets/utube.png";
+import Gram from "../Assets/gram.png";
+import LinkedIn from "../Assets/in.png";
+import X from "../Assets/x.png";
 
-const lastFooter = () => {
+const LastFooter = () => {
   return (
     <>
       <div className="lastFooter">
         <div>
-          <p>© 2024 Truecaller AB</p>
+          <p id="tc">© 2024 Truecaller AB</p>
         </div>
         <div>
           <p>
@@ -16,16 +21,16 @@ const lastFooter = () => {
             Conduct
           </p>
         </div>
-        <div>
-          <a href="" alt="Facebook icon">F</a>
-          <a href="" alt="Twitter icon">T</a>
-          <a href="" alt="Instagram icon">I</a>
-          <a href="" alt="Youtube icon">Y</a>
-          <a href="" alt="Linkedin icon">L</a>
+        <div className="images">
+          <img src={Facebook} alt="facebook" />
+          <img src={X} alt="x" />
+          <img src={Gram} alt="instagram" />
+          <img src={Utube} alt="youtube" />
+          <img src={LinkedIn} alt="Linkedin" />
         </div>
       </div>
     </>
   );
 };
 
-export default lastFooter;
+export default LastFooter;
