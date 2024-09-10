@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Mobile.css";
 import Home from "./Components/home";
 import About from "./Components/about";
 import Features from "./Components/features";
@@ -7,6 +8,7 @@ import LatestArticles from "./Components/articles";
 import Download from "./Components/download";
 import Footer from "./Components/footer";
 import LastFooter from "./Components/lastFooter";
+
 
 function App() {
   return (

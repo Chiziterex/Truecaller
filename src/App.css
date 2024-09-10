@@ -5,7 +5,7 @@
   --txt-color-blk: #000;
   --txt-color-gry: #2d2d2d;
   --light-grey: #9eafab;
-  --hero-section-color: rgb(45, 45, 45, 0.3);
+  --hero-section-color: rgb(0, 0, 0, 0.3);
   --button-color: rgb(0, 135, 255);
   --star-color: orange;
   --features-bg-color: #dae8f3;
@@ -21,15 +21,12 @@
   margin: 0;
   padding: 0;
   outline: none;
+  overflow-x: none ;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  overflow-x: hidden;
   scroll-padding-top: 6rem;
   scroll-behaviour: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-section {
@@ -156,10 +153,10 @@ main {
 }
 
 main h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 3.75rem;
   color: var(--txt-color);
+  margin: 0;
 }
 
 main #scnd-base {
@@ -328,9 +325,11 @@ main #input #search-bar .fa-magnifying-glass {
 
 /* about */
 .about {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   padding: 4rem 2.5rem;
   flex-direction: column;
   gap: 2.75rem;
@@ -489,6 +488,7 @@ main #input #search-bar .fa-magnifying-glass {
 
 .trending .text-box {
   display: flex;
+  flex: 1 1 0%;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -933,7 +933,7 @@ footer .content .text-box p {
   cursor: pointer;
 }
 
-footer .content .text-box p a{
+footer .content .text-box p a {
   color: var(--txt-color);
 }
 
@@ -954,31 +954,35 @@ footer .content .text-box span {
   justify-content: space-between;
   background-color: var(--lastFooter-bg);
   color: var(--txt-color);
-  font-size: .75rem;
+  font-size: 0.75rem;
   padding: 0.5rem 0;
   line-height: 1.125;
 }
 
-.lastFooter div #tc{
+.lastFooter div #tc {
   font-weight: 700;
 }
 
-.lastFooter div p span::before{
+.lastFooter div p {
+  cursor: pointer;
+}
+
+.lastFooter div p span::before {
   content: "|";
   font-size: 1rem;
   font-weight: 200;
   color: var(--txt-color);
 }
 
-.lastFooter .images{
+.lastFooter .images {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.lastFooter .images img{
+.lastFooter .images img {
   width: 25px;
   height: 25px;
   border-radius: 50%;

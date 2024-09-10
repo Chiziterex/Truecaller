@@ -41,6 +41,11 @@ const Navbar = () => {
                 Business
               </a>
             </li>
+            <li>
+              <a href="https://www.truecaller.com/scam-alert" class="">
+                Scam Alert
+              </a>
+            </li>
           </ul>
         </div>
         <div>
